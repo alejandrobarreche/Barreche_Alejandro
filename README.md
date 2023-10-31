@@ -16,6 +16,7 @@ Si HEAD se encuentra en la rama _"examen_parcial"_ y ha sufrido cambios, es deci
 * Segundo habría que comenzar con la fusión a traves de _git merge main_, donde estaríamos fusionando la rama main en la rama examen_parcial
 * Tercero habría que solucionar los conflictos de aquellos ficheros que los tengan, para acabar haciendo _git add ._ que añadiría todo los ficheros que hemos editado.
 * Por último, podríamos utilizar tanto el comando _git merge --continue_ como el comando _git commit -m "Mensaje significativo"_ para finalizar con la fusión de las ramas.
+  
 Este procedimiento nos deja la rama _examen parcial_ en el último commit, que es la fusión de ambas ramas, sin embargo, para fusionar la rama _examen_parcial_ en la rama _main habría que seguir otra serie de pasos:
 * Primero habría que cambiarse a la rama main a través de _git checkout main_
 * Segundo habría que fusionar las ramas con el comando _git merge examen_parcial_, que debido a que hemos fusionado las ramas anteriormente, la forma de hacerlo ahora será más sencilla ya que hará lo que se conoce como ff (fast-forward). Esto dejará la rama _main_ en el mismo commit que la rama _examen_parcial_ y podríamos decidir que hacer con la otra rama.
